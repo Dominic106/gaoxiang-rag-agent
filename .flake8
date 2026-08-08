@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 200
+extend-ignore = E117,E122,E201,E202,E203,E305,E501,W503
+exclude = code/.venv,outputs,indexes,sessions,memory

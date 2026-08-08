@@ -1,0 +1,26 @@
+[
+  {
+    "question": "什么是范围基准",
+    "expected_contains": "第18章 项目范围管理"
+  },
+  {
+    "question": "定性风险分析和定量风险分析有什么区别",
+    "expected_contains": "第24章 项目风险管理"
+  },
+  {
+    "question": "WBS 是什么",
+    "expected_contains": "第18章 项目范围管理"
+  },
+  {
+    "question": "挣值管理有哪些公式",
+    "expected_contains": "第19章 进度控制"
+  },
+  {
+    "question": "配置管理包括哪些活动",
+    "expected_contains": "第26章 文档和配置管理"
+  },
+  {
+    "question": "项目章程的输入输出工具技术是什么",
+    "expected_contains": "第17章 项目整体管理"
+  }
+]

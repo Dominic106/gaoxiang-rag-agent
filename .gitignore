@@ -1,0 +1,46 @@
+# Secrets and local configuration
+code/.env
+**/.env
+*.pem
+*.key
+
+# Python environments and caches
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+htmlcov/
+
+# Local runtime state and generated artifacts
+indexes/
+memory/
+sessions/
+outputs/
+logs/
+*.log
+*.lock
+
+# Collected external pages, exam documents and generated stress reports
+test/raw_pages/
+test/sources/
+test/datasets/
+test/reports/
+notes/answer_eval_v1.json
+notes/eval_questions_v1.json
+
+# Local source corpus. Add legally obtained study materials locally.
+source_docs/
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Unrelated local document builder
+build_health_agent_docx.py

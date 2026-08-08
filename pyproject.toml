@@ -1,0 +1,24 @@
+[tool.ruff]
+target-version = "py311"
+line-length = 200
+exclude = ["code/.venv", "outputs", "indexes", "sessions", "memory"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "C4", "SIM", "UP", "TRY", "RUF", "PLW", "BLE"]
+ignore = ["DTZ005", "I001", "RUF001", "RUF002", "RUF003", "TRY003", "TRY300", "TRY301", "PLW0108", "PLW2901"]
+
+[tool.black]
+line-length = 200
+target-version = ["py311"]
+extend-exclude = "code/.*"
+
+[tool.isort]
+profile = "black"
+line_length = 200
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = false
+exclude = "code/(14_exception_regression|20_answer_template_regression|21_service_interface_regression)\\.py$"

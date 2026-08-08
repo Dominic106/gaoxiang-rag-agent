@@ -1,0 +1,9 @@
+{
+  "include": ["code"],
+  "exclude": ["code/.venv", "outputs", "indexes", "sessions", "memory"],
+  "venvPath": "code",
+  "venv": ".venv",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "error",
+  "reportMissingTypeStubs": "none"
+}
