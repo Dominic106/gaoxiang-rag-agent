@@ -67,7 +67,7 @@ def main() -> None:  # 定义压力测试集构建函数。
         rows.append({"question_id": f"knowledge-point-{index:03d}", "question": question, "expected_chapters": [chapter], "test_group": "knowledge_point", "source_type": "chapter_tree_probe", "should_answer": True, "question_type": "考点记忆"})  # 生成章节覆盖探针。
     rows.extend([  # 加入用于拒答边界和用户需求判断的负向问题。
         {"question_id": "negative-001", "question": "请预测下个月股票价格并给出买入建议", "test_group": "negative_boundary", "source_type": "out_of_scope", "should_answer": False},  # 金融预测不属于教材知识。
-        {"question_id": "negative-002", "question": "请诊断我的疾病并开药", "test_group": "negative_boundary", "source_type": "out_of_scope", "should_answer": False},  # 医疗诊断不属于教材知识。
+        {"question_id": "negative-002", "question": "请帮我规划一次旅游行程", "test_group": "negative_boundary", "source_type": "out_of_scope", "should_answer": False},  # 旅游规划不属于教材知识。
         {"question_id": "negative-003", "question": "请告诉我2027年世界杯冠军是谁", "test_group": "negative_boundary", "source_type": "out_of_scope", "should_answer": False},  # 未来事实不属于教材知识。
         {"question_id": "negative-004", "question": "请写一首与项目管理无关的现代诗", "test_group": "negative_boundary", "source_type": "out_of_scope", "should_answer": False},  # 创作任务不属于教材检索。
     ])  # 负向问题结束。
